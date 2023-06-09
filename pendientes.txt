@@ -1,0 +1,10 @@
+
+- hacer click
+- hacer post
+- hacer funciones hacer cloud
+- hacer funciones stemiza
+- hacer script de descarga e instalacion
+- hacer tests
+- hacer requirements.txt
+- hacer funciones en main
+- hacer yaml github actions
