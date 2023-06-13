@@ -8,3 +8,4 @@
 - hacer requirements.txt
 - hacer funciones en main
 - hacer yaml github actions
+- hacer pagina bootstrap
