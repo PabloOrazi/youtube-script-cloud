@@ -4,6 +4,11 @@ pytest
 pytest-cov
 pylint
 click
-
+nltk
+youtube-transcript-api
+pandas
+spacy
+wordcloud
+matplotlib
 
 Pillow
