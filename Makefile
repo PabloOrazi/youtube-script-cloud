@@ -17,7 +17,7 @@ format:
 	black *.py
 	
 lint:
-	pylint --disable=R,C app.py functions.py main.py
+	pylint --disable=R,C app.py functions.py yt_transcript_cli.py
 	
 test:
 	python -m pytest -vv --cov=functions --cov=app --cov=yt_transcript_cli --cov-report=html:test_coverage_report tests/
