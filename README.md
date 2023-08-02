@@ -43,7 +43,7 @@ python yt_transcript_cli.py get-script OJDkPz3nPjM --language en --output-file w
     git clone https://github.com/PabloOrazi/youtube-script-cloud.git
     ```
 
-3.  Run `make install` in Linux. In Windows, if Make is not installed, 	`pip install --upgrade pip` and	`pip install -r requirements.txt`
+3.  Run `make install` in Linux. In Windows, if Make is not installed, 	`pip install --upgrade pip`,	`pip install -r requirements.txt` and `python models_setup.py`
 
 To run the Flask App
 
