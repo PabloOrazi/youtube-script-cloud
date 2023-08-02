@@ -17,16 +17,19 @@ format:
 	black *.py
 	
 lint:
-	pylint --disable=R,C hello.py
+	pylint --disable=R,C app.py functions.py main.py
 	
 test:
-	python -m pytest -vv --cov=hello test_hello.py
+	python -m pytest -vv --cov=functions --cov=app --cov=yt_transcript_cli --cov-report=html:test_coverage_report tests/
 
 build:
 	docker build -t my-flask-app .
 
-run:
+run-daemon:
 	docker run -d -p 5000:5000 my-flask-app
+
+run:
+	docker run -p 5000:5000 my-flask-app
 
 run-flask:
 	python3 app.py
