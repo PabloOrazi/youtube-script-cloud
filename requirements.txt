@@ -6,9 +6,10 @@ pylint
 click
 nltk
 youtube-transcript-api
-pandas
+# requests
+# pandas
 spacy
 wordcloud
-matplotlib
+matplotlib<=3.8
 
-Pillow
+# Pillow
