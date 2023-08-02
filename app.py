@@ -11,9 +11,28 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/get_transcript", methods=["POST"])
+def post_request_transcript():
+    # print(request)
+    # print(request.data)
+    record = json.loads(request.data)
+    link = record["inputYouTubeUrl"]
+    # print(record)
+    video_id = extract_id(link)
 
-@app.route("/return_transcript", methods=["POST"])
-def post_request():
+    # Generate or manipulate the image
+    language, text = download_script(video_id)
+
+    response = {
+        "url": record["inputYouTubeUrl"],
+        "language" : language,
+        "text": text
+    }
+
+    return jsonify(response)    
+
+@app.route("/get_wordcloud", methods=["POST"])
+def post_request_wordcloud():
     # print(request)
     # print(request.data)
     record = json.loads(request.data)
