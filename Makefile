@@ -8,7 +8,8 @@ setup-env: install-python create-env
 
 install:
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+		pip install -r requirements.txt &&\
+			python models_setup.py
 
 update-linux:
 	sudo apt update && sudo apt upgrade
