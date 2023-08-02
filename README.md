@@ -23,25 +23,25 @@ python yt_transcript_cli.py get-script OJDkPz3nPjM --language en --output-file w
 
 1.  Create virtual environment and source
 
-In Linux:
+    In Linux:
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
 
-In Windows
+    In Windows
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
+    ```bash
+    python -m venv .venv
+    .venv\Scripts\activate
+    ```
 
 2. Clone this repo 
 
-```bash
-git clone https://github.com/PabloOrazi/youtube-script-cloud.git
-```
+    ```bash
+    git clone https://github.com/PabloOrazi/youtube-script-cloud.git
+    ```
 
 3.  Run `make install` in Linux. In Windows, if Make is not installed, 	`pip install --upgrade pip` and	`pip install -r requirements.txt`
 
@@ -60,14 +60,14 @@ To run the CLI
 
 1.  In Linux, you can run `make install` to build the image. In Windows:
 
-```bash
-docker build -t my-flask-app .
-```
+    ```bash
+    docker build -t my-flask-app .
+    ```
 
 2.  Run `make run-daemon` to run the container. In Windows:
 
-```bash
-docker run -d -p 5000:5000 my-flask-app
-```
+    ```bash
+    docker run -d -p 5000:5000 my-flask-app
+    ```
 
 3.  Go to url http://127.0.0.1:5000 in your favorite Web Browser 
