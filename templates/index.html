@@ -78,7 +78,7 @@
             const jsonObject = Object.fromEntries(formData);
             const jsonString = JSON.stringify(jsonObject);
             
-            fetch('/return_transcript', {
+            fetch('/get_wordcloud', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
